@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head><title>Translation Result</title></head>
+<body>
+  <h2>Original Hindi Text</h2>
+  <p>{{ hindi }}</p>
+
+  <h2>Translated English Text</h2>
+  <p>{{ english }}</p>
+
+  <h3>Hindi Summary</h3>
+  <p>{{ summary_hi }}</p>
+
+  <h3>English Summary</h3>
+  <p>{{ summary_en }}</p>
+
+  <form action="/generate_pdf" method="post">
+    <input type="hidden" name="text" value="{{ english }}">
+    <button type="submit">Download Translated PDF</button>
+  </form>
+</body>
+</html>
