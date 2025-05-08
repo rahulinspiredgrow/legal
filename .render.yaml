@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: hindi-to-english-translator
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn app:app"
+    plan: free
